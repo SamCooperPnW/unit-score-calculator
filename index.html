@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Military Unit Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+      <h1>Military Unit Calculator</h1>
+      <div class="unit">
+        <label for="soldiers">Soldiers:</label>
+        <input type="range" min="0" max="1000000" value="0" id="soldiers" class="slider">
+        <input type="number" min="0" max="1000000" value="0" id="soldiers-input" class="input">
+      </div>
+      <div class="unit">
+        <label for="tanks">Tanks:</label>
+        <input type="range" min="0" max="100000" value="0" id="tanks" class="slider">
+        <input type="number" min="0" max="100000" value="0" id="tanks-input" class="input">
+      </div>
+      <div class="unit">
+        <label for="planes">Planes:</label>
+        <input type="range" min="0" max="10000" value="0" id="planes" class="slider">
+        <input type="number" min="0" max="10000" value="0" id="planes-input" class="input">
+      </div>
+      <div class="unit">
+        <label for="ships">Ships:</label>
+        <input type="range" min="0" max="1000" value="0" id="ships" class="slider">
+        <input type="number" min="0" max="1000" value="0" id="ships-input" class="input">
+      </div>
+      <div id="total-score"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

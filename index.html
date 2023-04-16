@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Military Unit Calculator</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div id="container">
-      <h1>Military Unit Calculator</h1>
-      <div class="unit">
-        <label for="soldiers">Soldiers:</label>
-        <input type="range" min="0" max="1000000" value="0" id="soldiers" class="slider">
+<html lang="en" style="font-family:monospace">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Unit Score Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <h1 style="text-align: center; padding: 20px">Unit Score Caclulator</h1>
+    </head>
+    <body>
+        
+    <div class="unit-container">
+        <label class=label>Soldiers</label>
+        <input type="range" min="0" max="1000000" value="0" id="soldiers-slider" class="slider">
         <input type="number" min="0" max="1000000" value="0" id="soldiers-input" class="input">
-      </div>
-      <div class="unit">
-        <label for="tanks">Tanks:</label>
-        <input type="range" min="0" max="100000" value="0" id="tanks" class="slider">
+    </div>
+        
+    <div class="unit-container">
+        <label class=label>Tanks</label>
+        <input type="range" min="0" max="100000" value="0" id="tanks-slider" class="slider">
         <input type="number" min="0" max="100000" value="0" id="tanks-input" class="input">
-      </div>
-      <div class="unit">
-        <label for="planes">Planes:</label>
-        <input type="range" min="0" max="10000" value="0" id="planes" class="slider">
+    </div>
+        
+    <div class="unit-container">
+        <label class=label>Planes</label>
+        <input type="range" min="0" max="10000" value="0" id="planes-slider" class="slider">
         <input type="number" min="0" max="10000" value="0" id="planes-input" class="input">
-      </div>
-      <div class="unit">
-        <label for="ships">Ships:</label>
-        <input type="range" min="0" max="1000" value="0" id="ships" class="slider">
+    </div>
+        
+    <div class="unit-container">
+        <label class=label>Ships</label>
+        <input type="range" min="0" max="1000" value="0" id="ships-slider" class="slider">
         <input type="number" min="0" max="1000" value="0" id="ships-input" class="input">
-      </div>
-      <div id="total-score"></div>
+    </div>
+        
+        
+    <div>
+        <label id="total-score">Total Score: 0 </label>
     </div>
     <script src="script.js"></script>
-  </body>
+    </body>
 </html>

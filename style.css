@@ -1,79 +1,58 @@
 body {
-    font-family: "Roboto", sans-serif;
-    background-color: #ddbebe;
-  }
-  
-#container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 160px;
-}
-  
-  h1 {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-  
-
-#soldiers {
-  width: 180px;
-}
-
-#tanks {
-  width: 180px;
-}
-
-#planes {
-  width: 180px;
-}
-
-#ships {
-  width: 180px;
+    background-color:#ffffff;
 }
 
 
-
-#soldiers-input {
-    width: 100px;
-    height: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-}
-  
-#tanks-input {
-    width: 100px;
-    height: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 15px;
+.slider{
+    -webkit-appearance:none;    
+    width: 280px;
+    height:15px;
+    outline:none;
+    border-radius: 3px;
+    background-color:#f2f2f2;
+    outline:none;
+    border-radius: 25px;
+    *box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
 }
 
-#planes-input {
-    width: 100px;
-    height: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 15px;
-}
-
-#ships-input {
-    width: 100px;
-    height: 16px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 15px;
+.slider::-moz-range-thumb{
+    height: 20px;
+    width: 24px;
 }
 
 
-.unit{
-    padding: 6px;
-    align;
-}
-  
-
-#total-score {
+.input{
+    width: 120px;
+    height: 100%;
     font-size: 18px;
-    margin-top: 40px;
-  }
+    border-radius: 5px;
+    border: 1px solid #999;
+    margin-top: 15px;
+}
+
+.unit-container{
+    background:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 20px 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.label{
+    font-size: 20px;
+    padding: none;
+}
+
+#total-score{
+    padding-top: 0px;
+    font-size: 29px;
+}
+
+

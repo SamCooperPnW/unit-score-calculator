@@ -1,60 +1,64 @@
-const soldiersSlider = document.getElementById("soldiers");
-const soldiersInput = document.getElementById("soldiers-input");
-const tanksSlider = document.getElementById("tanks");
-const tanksInput = document.getElementById("tanks-input");
-const planesSlider = document.getElementById("planes");
-const planesInput = document.getElementById("planes-input");
-const shipsSlider = document.getElementById("ships");
-const shipsInput = document.getElementById("ships-input");
-const totalScore = document.getElementById("total-score");
+const soldiers_slider = document.getElementById("soldiers-slider");
+const soldiers_input = document.getElementById("soldiers-input");
+const tanks_slider = document.getElementById("tanks-slider");
+const tanks_input = document.getElementById("tanks-input");
+const planes_slider = document.getElementById("planes-slider");
+const planes_input = document.getElementById("planes-input");
+const ships_slider = document.getElementById("ships-slider");
+const ships_input = document.getElementById("ships-input");
+const total_score = document.getElementById("total-score");
+
 
 const updateScore = () => {
-  const soldiers = Number(soldiersSlider.value);
-  const tanks = Number(tanksSlider.value);
-  const planes = Number(planesSlider.value);
-  const ships = Number(shipsSlider.value);
-  const score = soldiers * 0.0004 + tanks * 0.025 + planes * 0.3 + ships * 1;
-  totalScore.textContent = `Total Score: ${score}`;
+    const soldiers = Number(soldiers_slider.value);
+    const tanks = Number(tanks_slider.value);
+    const planes = Number(planes_slider.value);
+    const ships = Number(ships_slider.value);
+    const raw_score = soldiers * 0.0004 + tanks * 0.025 + planes * 0.3 + ships * 1;
+    const score = raw_score.toFixed(2);
+    total_score.textContent = `Total Score: ${score}`;
 };
 
-soldiersSlider.addEventListener("input", e => {
-  soldiersInput.value = e.target.value;
+soldiers_slider.addEventListener("input", e => {
+  soldiers_input.value = e.target.value;
   updateScore();
 });
 
-soldiersInput.addEventListener("input", e => {
-  soldiersSlider.value = e.target.value;
+soldiers_input.addEventListener("input", e => {
+  soldiers_slider.value = e.target.value;
   updateScore();
 });
 
-tanksSlider.addEventListener("input", e => {
-  tanksInput.value = e.target.value;
+tanks_slider.addEventListener("input", e => {
+  tanks_input.value = e.target.value;
   updateScore();
 });
 
-tanksInput.addEventListener("input", e => {
-  tanksSlider.value = e.target.value;
+tanks_input.addEventListener("input", e => {
+  tanks_slider.value = e.target.value;
   updateScore();
 });
 
-planesSlider.addEventListener("input", e => {
-  planesInput.value = e.target.value;
+planes_slider.addEventListener("input", e => {
+  planes_input.value = e.target.value;
   updateScore();
 });
 
-planesInput.addEventListener("input", e => {
-  planesSlider.value = e.target.value;
+planes_input.addEventListener("input", e => {
+  planes_slider.value = e.target.value;
   updateScore();
 });
 
-shipsSlider.addEventListener("input", e => {
-  shipsInput.value = e.target.value;
+ships_slider.addEventListener("input", e => {
+  ships_input.value = e.target.value;
   updateScore();
 });
 
-shipsInput.addEventListener("input", e => {
-  shipsSlider.value = e.target.value;
+ships_input.addEventListener("input", e => {
+  ships_slider.value = e.target.value;
   updateScore();
 });
+
+
 
 updateScore();
